@@ -20,3 +20,5 @@ export const whatsappNumber='254726881124';
 // The site currently focuses on brand awareness. Set to true to bring back
 // prices, cart, search, sorting/price filters and add-to-cart buttons.
 export const shopEnabled=false;
+export const instagramUrl='https://www.instagram.com/elvaso_glassware/';
+export const pressUrl='https://www.standardmedia.co.ke/environment-climate/article/2001556584/the-second-life-of-waste-turning-used-bottle-into-art-new-products';
