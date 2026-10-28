@@ -17,3 +17,6 @@ export const products = [
 ];
 export const money = n=>`KES ${Number(n).toLocaleString('en-KE')}`;
 export const whatsappNumber='254726881124';
+// The site currently focuses on brand awareness. Set to true to bring back
+// prices, cart, search, sorting/price filters and add-to-cart buttons.
+export const shopEnabled=false;

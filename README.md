@@ -20,6 +20,10 @@ To build for production, run `npm run build` and deploy the `dist` folder to Ver
 - `/custom-orders` — custom enquiry form that opens WhatsApp with a prefilled message
 - `/our-story` — brand story
 
+## Shop mode
+
+The site currently focuses on introducing the brand, so all shopping features are switched off with `shopEnabled = false` in `src/data.js`. That hides prices, the cart, search, price sorting/filters and add-to-cart buttons; product pages offer a WhatsApp enquiry instead. Set it to `true` to bring the shop back.
+
 ## Before going live
 
 - **All product names, prices, dimensions, stock and delivery claims are demo placeholders.** Confirm your real catalogue and policies with El Vaso.
