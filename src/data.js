@@ -1,3 +1,5 @@
+// Product categories shown on the home page, collection tabs and footer.
+// `id` must match the `category` field of the products below.
 export const categories = [
   {
     id: "Glassware",
@@ -120,7 +122,9 @@ export const products = [
     size: "Approx. 18 cm",
   },
 ];
+// Formats a number as Kenyan shillings, e.g. 1500 -> "KES 1,500".
 export const money = (n) => `KES ${Number(n).toLocaleString("en-KE")}`;
+// El Vaso's WhatsApp number in international format, without the "+".
 export const whatsappNumber = "254726881124";
 // The site currently focuses on brand awareness. Set to true to bring back
 // prices, cart, search, sorting/price filters and add-to-cart buttons.
