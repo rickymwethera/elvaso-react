@@ -76,7 +76,7 @@ export default function About() {
             </button>
           </div>
         </div>
-        <img src={A + "artisan.webp"} alt="Artisan shaping upcycled glass in the El Vaso workshop" />
+        <img src={A + "workshop.webp"} alt="The El Vaso team at work in the workshop under a chandelier of bottles" />
       </section>
       <Values />
 
@@ -155,7 +155,7 @@ export default function About() {
             </button>
           </div>
         </div>
-        <img src={A + "custom-hero.webp"} alt="Artisan personalising a glass tumbler" />
+        <img src={A + "hero.webp"} alt="Green upcycled bottle tumblers with an El Vaso gift bag" />
       </section>
     </>
   );

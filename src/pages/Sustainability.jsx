@@ -45,7 +45,7 @@ export default function Sustainability() {
             ))}
           </div>
         </div>
-        <img src={A + "bowls.webp"} alt="Upcycled glass bowls made from discarded bottles" />
+        <img src={A + "bottle-store.webp"} alt="Shelves of collected bottles waiting to be cut" />
       </section>
       <section className="section container">
         <div className="eyebrow">OUR COMMITMENTS</div>

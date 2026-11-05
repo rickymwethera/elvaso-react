@@ -51,7 +51,7 @@ export default function Collection() {
             discarded glass bottles in Kenya.
           </p>
         </div>
-        <img src={A + "hero.webp"} alt="Green and amber handmade glassware" />
+        <img src={A + "showroom.webp"} alt="El Vaso glassware and vases on the showroom shelves" />
       </section>
       <main className="container shop-area">
         <div className="category-tabs">
@@ -162,7 +162,7 @@ export default function Collection() {
           <p>Personalised glassware for your home, event or business.</p>
           <LinkButton to="/custom-orders">Start a custom order</LinkButton>
         </div>
-        <img src={A + "custom-hero.webp"} alt="Handmade personalised glass" />
+        <img src={A + "engraved.webp"} alt="Hand-engraved bottle glasses" />
       </section>
     </>
   );

@@ -77,8 +77,8 @@ export default function CustomOrders() {
           </button>
         </div>
         <img
-          src={A + "custom-hero.webp"}
-          alt="Glassware being customised by an artisan"
+          src={A + "engraved.webp"}
+          alt="Two bottle glasses hand-engraved with a sunrise and an anchor"
         />
       </section>
       <div className="custom-features container">
@@ -132,9 +132,9 @@ export default function CustomOrders() {
         <h2>Made for every occasion.</h2>
         <div className="inspiration-grid">
           {[
-            { name: "Weddings & events", image: "wedding" },
+            { name: "Weddings & events", image: "events" },
             { name: "Restaurants & hospitality", image: "hospitality" },
-            { name: "Corporate gifts", image: "corporate" },
+            { name: "Corporate gifts", image: "gifts" },
             { name: "Home styling", image: "styling" },
           ].map((c) => (
             <button
@@ -170,7 +170,6 @@ export default function CustomOrders() {
               Sending this form opens a WhatsApp message with your enquiry,
               ready for you to send.
             </p>
-            <img src={A + "artisan.webp"} alt="Hand crafting upcycled glass" />
           </div>
           <form onSubmit={submit}>
             <h3>Custom order enquiry</h3>

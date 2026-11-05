@@ -2250,3 +2250,17 @@ button.info-card:hover,
     padding: 32px 24px;
   }
 }
+/* The real photos are tall portraits: stop them from stretching their
+   section. The text sets the section height and the photo fills it. */
+.page-hero img,
+.custom-cta > img,
+.collection-bottom img,
+.story-band > img,
+.form-layout > div > img {
+  contain: size;
+  min-height: 320px;
+}
+.custom-cta > img,
+.collection-bottom img {
+  object-position: center 60%;
+}

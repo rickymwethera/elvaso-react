@@ -19,6 +19,9 @@ To build for production, run `npm run build` and deploy the `dist` folder to Ver
 - `/products/olive-green-tumbler` (and other product slugs) — product details
 - `/custom-orders` — custom enquiry form that opens WhatsApp with a prefilled message
 - `/our-story` — brand story
+- `/about` — vision, mission, objectives, why El Vaso, who we serve
+- `/sustainability` — impact and the journey of a bottle
+- `/contact` — contact details and a WhatsApp message form
 
 ## Shop mode
 
@@ -27,7 +30,7 @@ The site currently focuses on introducing the brand, so all shopping features ar
 ## Before going live
 
 - **All product names, prices, dimensions, stock and delivery claims are demo placeholders.** Confirm your real catalogue and policies with El Vaso.
-- Product photographs bundled in `public/images` were cropped from the approved _AI-generated design mockups_ as temporary visual assets, **not real merchandise photography**. Replace them with permission-cleared high-resolution product photos.
+- Photos in `public/images` are El Vaso's own, chosen from the shared Google Drive folder and resized to WebP (max 1400px).
 - Replace the WhatsApp number in `src/data.js` if needed; currently it uses the number listed on the reference site.
 - Checkout is intentionally a WhatsApp enquiry flow, _not_ a payment system. The cart is client-side memory only; it does not persist after refresh.
 - The custom order form has no server or database; submitting it opens WhatsApp with an editable message. No files are uploaded or stored.
@@ -39,6 +42,6 @@ The site currently focuses on introducing the brand, so all shopping features ar
 - `src/main.jsx`: components, pages, client-side routing and interactions
 - `src/data.js`: catalogue/category seed data
 - `src/styles.css`: global brand styling and responsive breakpoints
-- `public/images/`: temporary imagery extracted from conceptual mockups
+- `public/images/`: El Vaso product, workshop and showroom photos
 
 This is a working front-end prototype/starter, not a production commerce backend.
