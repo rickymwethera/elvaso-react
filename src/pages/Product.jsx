@@ -44,22 +44,8 @@ export default function Product({ p }) {
           <div className="large-photo">
             <img src={image} alt={p.name} />
           </div>
-          <div className="thumbnails">
-            {[p.image, A + "product-hero.webp", A + "glassware.webp"].map(
-              (src, i) => (
-                <button
-                  key={src}
-                  className={image === src ? "selected" : ""}
-                  onClick={() => setImage(src)}
-                  aria-label={"View image " + (i + 1)}
-                >
-                  <img src={src} alt="" />
-                </button>
-              ),
-            )}
-          </div>
           <div className="material-story">
-            <img src={A + "artisan.webp"} alt="Glass artisan working" />
+            <img src={A + "workshop.webp"} alt="The El Vaso workshop" />
             <div>
               <div className="eyebrow gold">MORE THAN GLASSWARE</div>
               <h3>A cleaner tomorrow in your hands.</h3>

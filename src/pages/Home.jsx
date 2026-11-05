@@ -5,17 +5,15 @@ import {
   HeartHandshake,
   ChevronRight,
 } from "lucide-react";
-import { categories, products, shopEnabled } from "../data";
+import { categories, shopEnabled } from "../data";
 import { A } from "../utils";
 import { useApp } from "../AppContext";
 import LinkButton from "../components/LinkButton";
-import ProductCard from "../components/ProductCard";
 import Values from "../components/Values";
 import BottleSlider from "../components/BottleSlider";
 import Journey from "../components/Journey";
 import Press from "../components/Press";
 import BottleDrop from "../components/BottleDrop";
-import InstaStrip from "../components/InstaStrip";
 
 // The home page ("/"), made up of the sections above plus a few of its own.
 export default function Home() {
@@ -48,7 +46,7 @@ export default function Home() {
         <div className="hero-image">
           <img
             src={A + "hero.webp"}
-            alt="Artfully arranged green and amber upcycled glassware"
+            alt="Green upcycled bottle tumblers and an etched vase with an El Vaso gift bag"
           />
         </div>
       </section>
@@ -105,8 +103,8 @@ export default function Home() {
           </LinkButton>
         </div>
         <img
-          src={A + "artisan.webp"}
-          alt="Local artisan carefully working on upcycled glass"
+          src={A + "collecting.webp"}
+          alt="The El Vaso team sorting collected glass bottles"
         />
         <div className="story-benefits">
           <div className="eyebrow">THE EL VASO DIFFERENCE</div>
@@ -120,22 +118,6 @@ export default function Home() {
           <p>
             <Recycle size={20} /> A more circular future
           </p>
-        </div>
-      </section>
-      <section className="section container">
-        <div className="section-heading">
-          <div>
-            <div className="eyebrow">CURATED FOR YOU</div>
-            <h2>Pieces to fall in love with.</h2>
-          </div>
-          <button className="text-link" onClick={() => shop()}>
-            {shopEnabled ? "Shop all" : "View all"} <ArrowRight size={16} />
-          </button>
-        </div>
-        <div className="products-grid home-products">
-          {products.slice(0, 4).map((p) => (
-            <ProductCard key={p.id} p={p} />
-          ))}
         </div>
       </section>
       <BottleDrop />
@@ -154,11 +136,10 @@ export default function Home() {
           <LinkButton to="/custom-orders">Explore custom orders</LinkButton>
         </div>
         <img
-          src={A + "custom-hero.webp"}
-          alt="Artisan personalising a glass tumbler"
+          src={A + "engraved.webp"}
+          alt="Two bottle glasses hand-engraved with a sunrise and an anchor"
         />
       </section>
-      <InstaStrip />
     </>
   );
 }

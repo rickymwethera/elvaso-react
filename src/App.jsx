@@ -10,6 +10,9 @@ import Collection from "./pages/Collection";
 import Product from "./pages/Product";
 import CustomOrders from "./pages/CustomOrders";
 import Story from "./pages/Story";
+import About from "./pages/About";
+import Sustainability from "./pages/Sustainability";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 // Root component. It holds the shared state (current page, cart, favourites,
@@ -100,10 +103,14 @@ export default function App() {
         <Product p={currentProduct} />
       ) : path === "/custom-orders" ? (
         <CustomOrders />
-      ) : path === "/our-story" ||
-        path === "/about" ||
-        path === "/sustainability" ? (
+      ) : path === "/our-story" ? (
         <Story />
+      ) : path === "/about" ? (
+        <About />
+      ) : path === "/sustainability" ? (
+        <Sustainability />
+      ) : path === "/contact" ? (
+        <Contact />
       ) : (
         <NotFound />
       )}

@@ -28,7 +28,7 @@ export default function Story() {
             Explore our collection <ArrowRight size={16} />
           </button>
         </div>
-        <img src={A + "artisan.webp"} alt="Artisan crafting glass" />
+        <img src={A + "collecting.webp"} alt="The El Vaso team sorting collected glass bottles" />
       </section>
       <Values />
       <section className="section container story-body">
