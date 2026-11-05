@@ -2264,3 +2264,17 @@ button.info-card:hover,
 .collection-bottom img {
   object-position: center 60%;
 }
+/* Keep the home hero within one screen: the photo fills the space the
+   text needs instead of setting the height itself. */
+.hero-image img {
+  contain: size;
+}
+@media (min-width: 761px) {
+  .hero {
+    min-height: 0;
+    height: clamp(460px, calc(100svh - 108px), 620px);
+  }
+  .hero-image {
+    min-height: 0;
+  }
+}
