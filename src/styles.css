@@ -491,8 +491,21 @@ small {
 }
 .price-row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  align-items: baseline;
+  margin-top: 6px;
+}
+.price-row strong {
+  white-space: nowrap;
+}
+.price-row small {
+  white-space: nowrap;
+  font-size: 0.74rem;
+  color: #8a867e;
+}
+.price-row button {
+  margin-left: auto;
 }
 .price-row strong {
   font-size: 0.91rem;
@@ -829,6 +842,11 @@ small {
   font-weight: 700;
   color: #b94b30;
   margin: 18px 0;
+}
+.detail-price small {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #8a867e;
 }
 .detail-description {
   color: #66685f;

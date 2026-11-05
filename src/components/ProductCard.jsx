@@ -1,9 +1,9 @@
 import { Heart, Plus } from "lucide-react";
-import { money, shopEnabled } from "../data";
+import { priceLabel, shopEnabled } from "../data";
 import { useApp } from "../AppContext";
 
-// A product tile used in product grids. Price, favourite and add-to-cart
-// controls only show when shopEnabled is true.
+// A product tile used in product grids. Favourite and add-to-cart controls
+// only show when shopEnabled is true.
 export default function ProductCard({ p }) {
   const { go, add, favorites, toggleFavorite } = useApp();
   return (
@@ -35,14 +35,11 @@ export default function ProductCard({ p }) {
           >
             {p.name}
           </button>
-          <span className="swatch" style={{ background: p.colorHex }} />
         </div>
-        <p>
-          {p.size} · {p.color}
-        </p>
-        {shopEnabled && (
-          <div className="price-row">
-            <strong>{money(p.price)}</strong>
+        <div className="price-row">
+          <strong>{priceLabel(p)}</strong>
+          <small>{p.unit}</small>
+          {shopEnabled && (
             <button
               onClick={() => add(p)}
               title="Add to cart"
@@ -50,8 +47,8 @@ export default function ProductCard({ p }) {
             >
               <Plus size={18} />
             </button>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </article>
   );

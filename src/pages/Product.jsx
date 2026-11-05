@@ -11,13 +11,13 @@ import {
   Plus,
   MessageCircle,
 } from "lucide-react";
-import { products, money, shopEnabled } from "../data";
+import { products, money, priceLabel, shopEnabled } from "../data";
 import { A, whatsapp } from "../utils";
 import { useApp } from "../AppContext";
 import ProductCard from "../components/ProductCard";
 
 // A single product's page ("/products/<id>"): photo gallery, details,
-// colour variants, enquiry button and related products.
+// price, enquiry button and related products.
 export default function Product({ p }) {
   const { go, shop, add } = useApp();
   const [qty, setQty] = useState(1);
@@ -27,7 +27,10 @@ export default function Product({ p }) {
     setQty(1);
     setImage(p.image);
   }, [p.id]);
-  const related = products.filter((x) => x.id !== p.id).slice(0, 4);
+  const related = [
+    ...products.filter((x) => x.category === p.category && x.id !== p.id),
+    ...products.filter((x) => x.category !== p.category),
+  ].slice(0, 4);
   return (
     <main className="container product-page">
       <div className="breadcrumbs">
@@ -44,24 +47,29 @@ export default function Product({ p }) {
           <div className="large-photo">
             <img src={image} alt={p.name} />
           </div>
-          <div className="material-story">
-            <img src={A + "workshop.webp"} alt="The El Vaso workshop" />
-            <div>
-              <div className="eyebrow gold">HOW IT.S MADE</div>
-              <h3>Made from a reclaimed bottle</h3>
-              <p>
-                Crafted with care, designed to be enjoyed and made to help
-                reduce waste.
-              </p>
+          {p.category !== "Services" && (
+            <div className="material-story">
+              <img src={A + "workshop.webp"} alt="The El Vaso workshop" />
+              <div>
+                <div className="eyebrow gold">HOW IT'S MADE</div>
+                <h3>Made from a reclaimed bottle</h3>
+                <p>
+                  Crafted with care, designed to be enjoyed and made to help
+                  reduce waste.
+                </p>
+              </div>
             </div>
-          </div>
+          )}
         </div>
         <div className="details">
           <div className="eyebrow">HANDCRAFTED IN KENYA</div>
           <h1>{p.name}</h1>
-          {shopEnabled && <div className="detail-price">{money(p.price)}</div>}
+          <div className="detail-price">
+            {priceLabel(p)} <small>{p.unit.toLowerCase()}</small>
+          </div>
           <p className="detail-description">
-            {p.description} Every piece has its own subtle character.
+            {p.description}
+            {p.category !== "Services" && " Every piece has its own subtle character."}
           </p>
           <div className="detail-values">
             <span>
@@ -76,29 +84,6 @@ export default function Product({ p }) {
               <Recycle />
               Less waste
             </span>
-          </div>
-          <div className="selection">
-            <strong>
-              Colour: <span>{p.color}</span>
-            </strong>
-            <div className="variant-row">
-              <button className="variant active" title={p.color}>
-                <span style={{ background: p.colorHex }} />
-              </button>
-              {products
-                .filter((x) => x.category === p.category && x.id !== p.id)
-                .slice(0, 3)
-                .map((x) => (
-                  <button
-                    className="variant"
-                    key={x.id}
-                    onClick={() => go("/products/" + x.id)}
-                    title={x.color}
-                  >
-                    <span style={{ background: x.colorHex }} />
-                  </button>
-                ))}
-            </div>
           </div>
           {shopEnabled && (
             <>
@@ -140,7 +125,7 @@ export default function Product({ p }) {
               whatsapp(
                 shopEnabled
                   ? `Hello El Vaso! I'd like to enquire about ${qty} × ${p.name} (${money(p.price)} each).`
-                  : `Hello El Vaso! I'd love to know more about the ${p.name}.`,
+                  : `Hello El Vaso! I'd love to know more about the ${p.name} (${priceLabel(p)}).`,
               )
             }
           >
@@ -149,10 +134,14 @@ export default function Product({ p }) {
           <div className="info-accordion">
             {[
               ["Product details", p.description],
-              [
-                "Dimensions & care",
-                `${p.size}. Handwash gently. As each piece is handmade, minor variations may occur.`,
-              ],
+              ...(p.category === "Services"
+                ? []
+                : [
+                    [
+                      "Care",
+                      "Handwash gently. As each piece is handmade, minor variations may occur.",
+                    ],
+                  ]),
               [
                 "Sustainability",
                 "Our glassware is thoughtfully repurposed from discarded glass bottles by local artisans in Kenya.",
