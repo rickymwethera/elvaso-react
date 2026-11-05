@@ -8,7 +8,7 @@ export default function Values() {
         <Leaf />
         <span>
           <strong>100% upcycled glass</strong>
-          <small>Giving bottles a second life</small>
+          <small>Every piece starts as a bottle</small>
         </span>
       </div>
       <div>
@@ -21,8 +21,8 @@ export default function Values() {
       <div>
         <Recycle />
         <span>
-          <strong>Thoughtfully made</strong>
-          <small>Less waste, more possibility</small>
+          <strong>Finished by hand</strong>
+          <small>Smooth, safe edges</small>
         </span>
       </div>
     </div>

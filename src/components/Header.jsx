@@ -29,7 +29,7 @@ export default function Header({
   return (
     <>
       <div className="announcement">
-        Handmade in Kenya <span>✦</span> Reimagined from discarded glass
+        Handmade in Nairobi, Kenya <span>✦</span> From upcycled glass bottles
       </div>
       <header className="header">
         <div className="container header-inner">

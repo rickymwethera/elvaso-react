@@ -29,8 +29,8 @@ export default function Home() {
             <em>new stories.</em>
           </h1>
           <p>
-            We turn discarded glass bottles into beautiful, functional pieces.
-            Thoughtful design, local craft and a brighter future.
+            We collect discarded glass bottles in Nairobi and cut them into
+            glasses, vases, jars and planters by hand.
           </p>
           <div className="actions">
             <LinkButton to="/products">
@@ -54,11 +54,7 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <div className="eyebrow">OUR COLLECTION</div>
-            <h2>
-              Functional beauty,
-              <br />
-              <em>a kinder tomorrow.</em>
-            </h2>
+            <h2>What we make</h2>
           </div>
           <button className="text-link" onClick={() => shop()}>
             View all products <ArrowRight size={17} />
@@ -86,11 +82,7 @@ export default function Home() {
       <section className="story-band">
         <div className="story-copy">
           <div className="eyebrow gold">OUR STORY</div>
-          <h2>
-            Where waste
-            <br />
-            becomes wonder.
-          </h2>
+          <h2>Made in Nairobi from collected bottles</h2>
           <p>
             At El Vaso, we see potential in what others discard. Our artisans
             transform used bottles into thoughtful pieces that feel at home in
@@ -106,7 +98,7 @@ export default function Home() {
         />
         <div className="story-benefits">
           <div className="eyebrow">THE EL VASO DIFFERENCE</div>
-          <h3>Made with intention.</h3>
+          <h3>Why it matters</h3>
           <p>
             <Leaf size={20} /> Less waste
           </p>
@@ -121,12 +113,8 @@ export default function Home() {
       <BottleDrop />
       <section className="custom-cta">
         <div>
-          <div className="eyebrow">PERSONAL. THOUGHTFUL. YOURS.</div>
-          <h2>
-            Make something
-            <br />
-            uniquely yours.
-          </h2>
+          <div className="eyebrow">FOR GIFTS, EVENTS AND BUSINESSES</div>
+          <h2>Custom orders</h2>
           <p>
             From custom gifts to hospitality collections, let’s create something
             beautiful together.

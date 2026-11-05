@@ -58,7 +58,7 @@ export default function Footer() {
         <span>
           © {new Date().getFullYear()} El Vaso Glassware. All rights reserved.
         </span>
-        <span>Handmade with purpose · Crafted for the planet</span>
+        <span>Handmade in Nairobi, Kenya</span>
       </div>
     </footer>
   );

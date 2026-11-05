@@ -55,12 +55,8 @@ export default function About() {
     <>
       <section className="page-hero story-hero">
         <div>
-          <div className="eyebrow">ABOUT EL VASO GLASSWARE</div>
-          <h1>
-            Where waste
-            <br />
-            <em>becomes wonder.</em>
-          </h1>
+          <div className="eyebrow">ABOUT US</div>
+          <h1>About El Vaso</h1>
           <p>
             El Vaso Glassware transforms discarded glass bottles into stylish,
             functional products through innovative upcycling. We combine
@@ -84,8 +80,7 @@ export default function About() {
         <div className="vision-mission">
           <article>
             <Eye size={28} />
-            <div className="eyebrow">OUR VISION</div>
-            <h2>A leader in upcycled glass.</h2>
+            <h2>Our vision</h2>
             <p>
               To be a leading provider of upcycled glass products while making
               a positive impact on society and the environment.
@@ -93,8 +88,7 @@ export default function About() {
           </article>
           <article>
             <Target size={28} />
-            <div className="eyebrow">OUR MISSION</div>
-            <h2>Beauty with responsibility.</h2>
+            <h2>Our mission</h2>
             <p>
               To promote environmental responsibility by creating unique
               products from discarded bottles while empowering communities and
@@ -107,11 +101,7 @@ export default function About() {
       <section className="section info-band">
         <div className="container">
           <div className="eyebrow">WHAT DRIVES US</div>
-          <h2>
-            Our company
-            <br />
-            <em>objectives.</em>
-          </h2>
+          <h2>Our objectives</h2>
           <InfoGrid items={objectives} dark />
         </div>
       </section>
@@ -125,23 +115,15 @@ export default function About() {
       <section className="section soft-band">
         <div className="container">
           <div className="eyebrow">WHO WE SERVE</div>
-          <h2>
-            Crafted for
-            <br />
-            <em>conscious living.</em>
-          </h2>
+          <h2>Our customers</h2>
           <InfoGrid items={audiences} />
         </div>
       </section>
 
       <section className="custom-cta">
         <div>
-          <div className="eyebrow">READY WHEN YOU ARE</div>
-          <h2>
-            Ready to bring
-            <br />
-            beauty home?
-          </h2>
+          <div className="eyebrow">GET STARTED</div>
+          <h2>Shop or order a custom piece</h2>
           <p>
             Explore our handmade upcycled glassware or design a custom piece
             that tells your story.

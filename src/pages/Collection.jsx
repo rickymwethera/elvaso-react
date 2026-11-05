@@ -41,11 +41,10 @@ export default function Collection() {
     <>
       <section className="page-hero">
         <div>
-          <div className="eyebrow">HANDMADE WITH PURPOSE</div>
+          <div className="eyebrow">THE COLLECTION</div>
           <h1>
             Our <em>Collection</em>
           </h1>
-          <h3>Handcrafted from glass, made to be loved.</h3>
           <p>
             Explore pieces full of character, thoughtfully crafted from
             discarded glass bottles in Kenya.
@@ -158,7 +157,7 @@ export default function Collection() {
       <section className="collection-bottom">
         <div>
           <div className="eyebrow">CUSTOM ORDERS</div>
-          <h2>Something uniquely yours?</h2>
+          <h2>Need something custom?</h2>
           <p>Personalised glassware for your home, event or business.</p>
           <LinkButton to="/custom-orders">Start a custom order</LinkButton>
         </div>

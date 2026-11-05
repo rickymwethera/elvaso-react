@@ -128,7 +128,7 @@ export default function CustomOrders() {
         </div>
       </section>
       <section className="section container inspiration">
-        <div className="eyebrow">A LITTLE INSPIRATION</div>
+        <div className="eyebrow">IDEAS</div>
         <h2>Made for every occasion.</h2>
         <div className="inspiration-grid">
           {[
@@ -159,12 +159,8 @@ export default function CustomOrders() {
       <section className="form-section" id="enquiry-form">
         <div className="container form-layout">
           <div>
-            <div className="eyebrow">LET'S CREATE TOGETHER</div>
-            <h2>
-              Tell us about
-              <br />
-              <em>your idea.</em>
-            </h2>
+            <div className="eyebrow">ENQUIRY</div>
+            <h2>Send an enquiry</h2>
             <p>
               Share a few details and we’ll help you explore the possibilities.
               Sending this form opens a WhatsApp message with your enquiry,
