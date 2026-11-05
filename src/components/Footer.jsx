@@ -13,7 +13,7 @@ export default function Footer() {
             EL VASO
           </button>
           <p>
-            From Undesirable to Desirable. Thoughtfully upcycled glassware,
+            Old bottles, new stories. Thoughtfully upcycled glassware,
             handmade in Kenya.
           </p>
         </div>
