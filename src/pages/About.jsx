@@ -72,17 +72,10 @@ export default function About() {
             </button>
           </div>
         </div>
-        {/* Show the whole portrait photo: it sits uncropped over a blurred,
-            cropped copy of itself that fills the rest of the space. */}
-        <figure
-          className="photo-fit"
-          style={{ "--photo": `url(${A}workshop.webp)` }}
-        >
-          <img
-            src={A + "workshop.webp"}
-            alt="The El Vaso team at work in the workshop under a chandelier of bottles"
-          />
-        </figure>
+        <img
+          src={A + "about-showroom.webp"}
+          alt="Visitors browsing shelves of upcycled glassware in the El Vaso showroom"
+        />
       </section>
       <Values />
 
