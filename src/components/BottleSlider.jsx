@@ -10,11 +10,7 @@ export default function BottleSlider() {
     <section className="section container transform">
       <div className="transform-copy">
         <div className="eyebrow">FROM BOTTLE TO GLASS</div>
-        <h2>
-          Same glass.
-          <br />
-          <em>New purpose.</em>
-        </h2>
+        <h2>Before and after</h2>
         <p>
           Every El Vaso piece starts life as a bottle someone threw away. Drag
           the slider to see what it becomes.

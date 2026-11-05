@@ -16,11 +16,7 @@ export default function Contact() {
       <section className="page-hero contact-hero">
         <div>
           <div className="eyebrow">CONTACT</div>
-          <h1>
-            Let's talk
-            <br />
-            <em>glass.</em>
-          </h1>
+          <h1>Contact us</h1>
           <p>
             Questions about a piece, a custom order or a bulk order for your
             venue? We'd love to hear from you.

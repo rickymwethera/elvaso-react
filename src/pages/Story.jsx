@@ -32,11 +32,8 @@ export default function Story() {
       </section>
       <Values />
       <section className="section container story-body">
-        <div className="eyebrow">CRAFTED WITH PURPOSE</div>
-        <h2>
-          A little less waste.
-          <br />A lot more possibility.
-        </h2>
+        <div className="eyebrow">OUR BEGINNINGS</div>
+        <h2>How we started</h2>
         <p>
           We transform discarded bottles into beautiful, functional glassware.
           Every piece speaks to thoughtful design, Kenyan craftsmanship and a

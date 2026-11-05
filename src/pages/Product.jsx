@@ -47,8 +47,8 @@ export default function Product({ p }) {
           <div className="material-story">
             <img src={A + "workshop.webp"} alt="The El Vaso workshop" />
             <div>
-              <div className="eyebrow gold">MORE THAN GLASSWARE</div>
-              <h3>A cleaner tomorrow in your hands.</h3>
+              <div className="eyebrow gold">HOW IT.S MADE</div>
+              <h3>Made from a reclaimed bottle</h3>
               <p>
                 Crafted with care, designed to be enjoyed and made to help
                 reduce waste.

@@ -26,11 +26,7 @@ export default function Sustainability() {
       <section className="page-hero story-hero">
         <div>
           <div className="eyebrow">SUSTAINABILITY</div>
-          <h1>
-            A second life
-            <br />
-            <em>for every bottle.</em>
-          </h1>
+          <h1>Our impact</h1>
           <p>
             Glass can take a million years to break down in a landfill. We give
             discarded bottles from bars, restaurants and homes across Nairobi a
@@ -49,11 +45,7 @@ export default function Sustainability() {
       </section>
       <section className="section container">
         <div className="eyebrow">OUR COMMITMENTS</div>
-        <h2>
-          Good for the planet,
-          <br />
-          <em>good for people.</em>
-        </h2>
+        <h2>What we commit to</h2>
         <div className="info-grid four">
           {pillars.map(([Icon, t, d]) => (
             <article key={t} className="info-card">

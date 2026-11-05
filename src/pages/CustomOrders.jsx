@@ -56,11 +56,7 @@ export default function CustomOrders() {
       <section className="page-hero custom-hero">
         <div>
           <div className="eyebrow">CUSTOM ORDERS</div>
-          <h1>
-            Design something
-            <br />
-            <em>uniquely yours.</em>
-          </h1>
+          <h1>Custom orders</h1>
           <p>
             Celebrate the moments that matter with personalised, handcrafted
             glassware. Tell us what you're imagining.
@@ -128,7 +124,7 @@ export default function CustomOrders() {
         </div>
       </section>
       <section className="section container inspiration">
-        <div className="eyebrow">A LITTLE INSPIRATION</div>
+        <div className="eyebrow">IDEAS</div>
         <h2>Made for every occasion.</h2>
         <div className="inspiration-grid">
           {[
@@ -159,12 +155,8 @@ export default function CustomOrders() {
       <section className="form-section" id="enquiry-form">
         <div className="container form-layout">
           <div>
-            <div className="eyebrow">LET'S CREATE TOGETHER</div>
-            <h2>
-              Tell us about
-              <br />
-              <em>your idea.</em>
-            </h2>
+            <div className="eyebrow">ENQUIRY</div>
+            <h2>Send an enquiry</h2>
             <p>
               Share a few details and we’ll help you explore the possibilities.
               Sending this form opens a WhatsApp message with your enquiry,
