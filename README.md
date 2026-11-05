@@ -10,7 +10,7 @@ Responsive, slightly minimalist redesign based on the approved green + terracott
 4. Run `npm run dev`.
 5. Visit the localhost address shown by Vite (usually http://localhost:5173).
 
-To build for production, run `npm run build` and deploy the `dist` folder to Vercel, or connect this repository to Vercel (framework preset: Vite).
+To build for production, run `npm run build` and deploy the `dist` folder to Vercel. On GitHub Pages it is served at https://rickymwethera.github.io/elvasoglassware/ and the base path follows the repository name automatically, or connect this repository to Vercel (framework preset: Vite).
 
 ## Pages
 
