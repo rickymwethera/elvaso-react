@@ -6,9 +6,12 @@ import { useApp } from "../AppContext";
 // Main menu links: [label, path].
 const nav = [
   ["Home", "/"],
-  ["Our collection", "/products"],
+  ["Collection", "/products"],
+  ["About", "/about"],
   ["Our story", "/our-story"],
+  ["Sustainability", "/sustainability"],
   ["Custom orders", "/custom-orders"],
+  ["Contact", "/contact"],
 ];
 
 // Announcement bar and site header: logo, navigation (collapsible on mobile)

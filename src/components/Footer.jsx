@@ -1,5 +1,5 @@
-import { Instagram, Phone, MapPin } from "lucide-react";
-import { categories, whatsappNumber, instagramUrl } from "../data";
+import { Instagram, Phone, MapPin, Send } from "lucide-react";
+import { categories, whatsappNumber, instagramUrl, tiktokUrl } from "../data";
 import { useApp } from "../AppContext";
 
 // Site footer with navigation links, categories and contact details.
@@ -20,8 +20,11 @@ export default function Footer() {
         <div>
           <h4>Explore</h4>
           <button onClick={() => shop()}>Our collection</button>
+          <button onClick={() => go("/about")}>About</button>
           <button onClick={() => go("/our-story")}>Our story</button>
+          <button onClick={() => go("/sustainability")}>Sustainability</button>
           <button onClick={() => go("/custom-orders")}>Custom orders</button>
+          <button onClick={() => go("/contact")}>Contact</button>
         </div>
         <div>
           <h4>Categories</h4>
@@ -41,7 +44,10 @@ export default function Footer() {
             <Phone size={15} /> +254 726 881 124
           </a>
           <a href={instagramUrl} target="_blank" rel="noreferrer">
-            <Instagram size={15} /> Instagram
+            <Instagram size={15} /> @elvaso_glassware
+          </a>
+          <a href={tiktokUrl} target="_blank" rel="noreferrer">
+            <Send size={15} /> @el.vaso.glassware
           </a>
           <span>
             <MapPin size={15} /> Nairobi, Kenya
