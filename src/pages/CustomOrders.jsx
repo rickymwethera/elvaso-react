@@ -56,7 +56,11 @@ export default function CustomOrders() {
       <section className="page-hero custom-hero">
         <div>
           <div className="eyebrow">CUSTOM ORDERS</div>
-          <h1>Custom orders</h1>
+          <h1>
+            Design something
+            <br />
+            <em>uniquely yours.</em>
+          </h1>
           <p>
             Celebrate the moments that matter with personalised, handcrafted
             glassware. Tell us what you're imagining.
