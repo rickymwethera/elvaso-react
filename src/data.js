@@ -2,136 +2,247 @@
 // `id` must match the `category` field of the products below.
 export const categories = [
   {
-    id: "Glassware",
-    name: "Glassware",
-    sub: "Tumblers & everyday glasses",
-    image: import.meta.env.BASE_URL + "images/cat-glassware.webp",
+    id: "Glasses",
+    name: "Glasses",
+    sub: "Drinking glasses & tumblers",
+    image: import.meta.env.BASE_URL + "images/cat-glasses.webp",
   },
   {
-    id: "Flower Vases",
-    name: "Flower Vases",
-    sub: "Statement pieces for every space",
+    id: "Home Essentials",
+    name: "Home Essentials",
+    sub: "Jars, holders, succulents & gifts",
+    image: import.meta.env.BASE_URL + "images/cat-home.webp",
+  },
+  {
+    id: "Vases",
+    name: "Vases",
+    sub: "Decorative & upcycled vases",
     image: import.meta.env.BASE_URL + "images/cat-vases.webp",
   },
   {
-    id: "Jars & Canisters",
-    name: "Jars & Canisters",
-    sub: "Storage with bamboo lids",
-    image: import.meta.env.BASE_URL + "images/cat-jars.webp",
-  },
-  {
-    id: "Planters & Decor",
-    name: "Planters & Decor",
-    sub: "Planters, holders & accents",
-    image: import.meta.env.BASE_URL + "images/cat-planters.webp",
+    id: "Services",
+    name: "Services",
+    sub: "Installations, workshops, cutting & etching",
+    image: import.meta.env.BASE_URL + "images/cat-services.webp",
   },
 ];
-// Catalogue: product photos are El Vaso's own. Names, prices and sizes are
-// still placeholders to confirm with El Vaso.
+// Items and prices from the El Vaso WhatsApp catalogue. `priceFrom` marks
+// prices that are a starting point. `unit` says what the price covers.
 export const products = [
   {
-    id: "green-bottle-tumbler",
-    name: "Green Bottle Tumbler",
-    category: "Glassware",
-    price: 1200,
-    color: "Bottle Green",
-    colorHex: "#2f7d32",
-    image: import.meta.env.BASE_URL + "images/green-tumblers.webp",
+    id: "glass-set",
+    name: "Glass Set (6 pieces)",
+    category: "Glasses",
+    price: 1050,
+    unit: "Set of 6",
+    image: import.meta.env.BASE_URL + "images/glass-set.webp",
     description:
-      "Cut from green wine bottles and smoothed by hand. A bright, sturdy everyday glass.",
-    size: "Approx. 350 ml",
+      "Any six glasses, in one design or a mix of designs.",
   },
   {
-    id: "engraved-elephant-glass",
-    name: "Engraved Elephant Glass",
-    category: "Glassware",
-    price: 1800,
-    color: "Bottle Green",
-    colorHex: "#3d6b2a",
-    image: import.meta.env.BASE_URL + "images/elephant-glass.webp",
+    id: "short-whiskey-glasses",
+    name: "Short / Whiskey Glasses",
+    category: "Glasses",
+    price: 200,
+    unit: "Per glass",
+    image: import.meta.env.BASE_URL + "images/whiskey-glasses.webp",
     description:
-      "A tall bottle glass hand-engraved with an elephant scene. A favourite gift.",
-    size: "Approx. 500 ml",
+      "Short drinking glasses, perfect for whiskey.",
   },
   {
-    id: "everyday-clear-tumbler",
-    name: "Everyday Clear Tumbler",
-    category: "Glassware",
+    id: "juice-glasses",
+    name: "Juice Glasses",
+    category: "Glasses",
+    price: 200,
+    unit: "Per glass",
+    image: import.meta.env.BASE_URL + "images/juice-glasses.webp",
+    description:
+      "Simple upcycled glasses for everyday use at home or in a restaurant.",
+  },
+  {
+    id: "thick-glasses",
+    name: "Thick Glasses",
+    category: "Glasses",
+    price: 400,
+    unit: "Per glass",
+    image: import.meta.env.BASE_URL + "images/thick-glasses.webp",
+    description:
+      "Thick, quality glasses for whiskey fans.",
+  },
+  {
+    id: "floral-glasses",
+    name: "Floral Glasses",
+    category: "Glasses",
+    price: 200,
+    unit: "Per glass",
+    image: import.meta.env.BASE_URL + "images/floral-glasses.webp",
+    description:
+      "Upcycled from printed wine bottles, so the bottle's floral print becomes part of the glass.",
+  },
+  {
+    id: "cocktail-tumblers",
+    name: "Cocktail Tumblers (with wooden lids)",
+    category: "Glasses",
+    price: 500,
+    unit: "Per tumbler",
+    image: import.meta.env.BASE_URL + "images/cocktail-tumblers.webp",
+    description:
+      "Bottle tumblers with a fitted wooden lid and room for a straw.",
+  },
+  {
+    id: "glasses-on-clearance",
+    name: "Glasses On Clearance",
+    category: "Glasses",
+    price: 100,
+    unit: "Per glass",
+    image: import.meta.env.BASE_URL + "images/clearance-glasses.webp",
+    description:
+      "Glasses on sale while stocks last. Ask us what is available.",
+  },
+  {
+    id: "decorative-vases",
+    name: "Decorative Vases",
+    category: "Vases",
+    price: 999,
+    unit: "Per vase",
+    image: import.meta.env.BASE_URL + "images/decorative-vases.webp",
+    description:
+      "Upcycled vases finished with an art detail.",
+  },
+  {
+    id: "upcycled-vases",
+    name: "Upcycled Vases",
+    category: "Vases",
+    price: 700,
+    unit: "Per vase",
+    image: import.meta.env.BASE_URL + "images/upcycled-vases.webp",
+    description:
+      "Clear upcycled vases for flower lovers.",
+  },
+  {
+    id: "storage-jars",
+    name: "Storage Jars",
+    category: "Home Essentials",
+    price: 975,
+    unit: "Per jar",
+    image: import.meta.env.BASE_URL + "images/storage-jars.webp",
+    description:
+      "Upcycled glass jars with a wooden lid, for the kitchen, bathroom or office.",
+  },
+  {
+    id: "succulent-sets",
+    name: "Succulent Sets",
+    category: "Home Essentials",
+    price: 900,
+    unit: "Per set",
+    image: import.meta.env.BASE_URL + "images/succulent-sets.webp",
+    description:
+      "Your succulents deserve a cute home.",
+  },
+  {
+    id: "serviette-holders",
+    name: "Serviette Holders",
+    category: "Home Essentials",
+    price: 250,
+    unit: "Per holder",
+    image: import.meta.env.BASE_URL + "images/serviette-holders.webp",
+    description:
+      "Bottle-glass holders for serviettes, at home or on a restaurant table.",
+  },
+  {
+    id: "wooden-accessories",
+    name: "Wooden Accessories",
+    category: "Home Essentials",
+    price: 300,
+    unit: "Per piece",
+    image: import.meta.env.BASE_URL + "images/wooden-accessories.webp",
+    description:
+      "Wooden lids, coasters and bases designed to fit El Vaso pieces.",
+  },
+  {
+    id: "curated-gift-sets",
+    name: "Curated Gift Sets",
+    category: "Home Essentials",
+    price: 1999,
+    priceFrom: true,
+    unit: "Per set",
+    image: import.meta.env.BASE_URL + "images/gift-sets.webp",
+    description:
+      "Curated sets of El Vaso pieces, ready to give. Sets range from KES 2,400 to 3,500 depending on what goes in.",
+  },
+  {
+    id: "large-installations",
+    name: "Large Installations",
+    category: "Services",
+    price: 15000,
+    priceFrom: true,
+    unit: "Per project",
+    image: import.meta.env.BASE_URL + "images/large-installations.webp",
+    description:
+      "Bottle chandeliers, walls and statement pieces for homes and businesses. The price depends on the project.",
+  },
+  {
+    id: "private-workshop-experience",
+    name: "Private Workshop Experience",
+    category: "Services",
+    price: 2500,
+    unit: "Per adult",
+    image: import.meta.env.BASE_URL + "images/private-workshop.webp",
+    description:
+      "A private session in our workshop, making your own piece from a bottle. KES 2,500 per adult and KES 1,800 for kids under 15.",
+  },
+  {
+    id: "bottle-cutting-services",
+    name: "Bottle Cutting Services",
+    category: "Services",
+    price: 150,
+    unit: "Per bottle",
+    image: import.meta.env.BASE_URL + "images/bottle-cutting.webp",
+    description:
+      "Bring your own bottles. We cut, smoothen, resurface and clean each one.",
+  },
+  {
+    id: "glass-hand-etching",
+    name: "Glass Hand Etching",
+    category: "Services",
+    price: 550,
+    priceFrom: true,
+    unit: "Per glass",
+    image: import.meta.env.BASE_URL + "images/glass-etching.webp",
+    description:
+      "Hand-etched designs on glasses. The price depends on the design and quantity.",
+  },
+  {
+    id: "hand-etching-services",
+    name: "Hand Etching Services",
+    category: "Services",
     price: 1000,
-    color: "Clear",
-    colorHex: "#d9dfdc",
-    image: import.meta.env.BASE_URL + "images/everyday-glass.webp",
+    priceFrom: true,
+    unit: "Per piece",
+    image: import.meta.env.BASE_URL + "images/hand-etching.webp",
     description:
-      "A simple clear tumbler for juice, water or cocktails, made from a reclaimed bottle.",
-    size: "Approx. 400 ml",
+      "Detailed hand etching on bottles and larger pieces, from KES 1,000 depending on the design.",
   },
   {
-    id: "green-bottle-vase",
-    name: "Green Bottle Vase",
-    category: "Flower Vases",
-    price: 2200,
-    color: "Bottle Green",
-    colorHex: "#2f7d32",
-    image: import.meta.env.BASE_URL + "images/green-vase.webp",
+    id: "machine-engraving",
+    name: "Machine Engraving",
+    category: "Services",
+    price: 300,
+    priceFrom: true,
+    unit: "Per piece",
+    image: import.meta.env.BASE_URL + "images/machine-engraving.webp",
     description:
-      "A slim vase cut from a green bottle, made for single stems and loose bouquets.",
-    size: "Approx. 25 cm",
-  },
-  {
-    id: "black-diamond-vase",
-    name: "Black Diamond Vase",
-    category: "Flower Vases",
-    price: 2500,
-    color: "Black",
-    colorHex: "#1e1e1e",
-    image: import.meta.env.BASE_URL + "images/black-vase.webp",
-    description:
-      "A dark, faceted vase that makes white and pale flowers stand out.",
-    size: "Approx. 24 cm",
-  },
-  {
-    id: "lace-etched-vase",
-    name: "Lace-Etched Vase",
-    category: "Flower Vases",
-    price: 2500,
-    color: "Clear",
-    colorHex: "#d9dfdc",
-    image: import.meta.env.BASE_URL + "images/lace-vase.webp",
-    description:
-      "A tall clear vase with a delicate white lace pattern.",
-    size: "Approx. 30 cm",
-  },
-  {
-    id: "bamboo-lid-canister",
-    name: "Bamboo-Lid Canister",
-    category: "Jars & Canisters",
-    price: 1500,
-    color: "Green, black or clear",
-    colorHex: "#2f4f3a",
-    image: import.meta.env.BASE_URL + "images/canisters.webp",
-    description:
-      "Bottle glass with a fitted bamboo lid, for coffee, sugar, spices or bathroom bits.",
-    size: "Approx. 15 cm",
-  },
-  {
-    id: "bottle-trough-planter",
-    name: "Bottle Trough Planter",
-    category: "Planters & Decor",
-    price: 2000,
-    color: "Bottle Green",
-    colorHex: "#2f7d32",
-    image: import.meta.env.BASE_URL + "images/trough-planter.webp",
-    description:
-      "A whole bottle laid on its side and opened up into a planter for succulents.",
-    size: "Approx. 30 cm",
+      "Names, dates and logos engraved by machine. The price varies by size.",
   },
 ];
 // Formats a number as Kenyan shillings, e.g. 1500 -> "KES 1,500".
 export const money = (n) => `KES ${Number(n).toLocaleString("en-KE")}`;
+// A product's price as shown to visitors, e.g. "From KES 550".
+export const priceLabel = (p) => (p.priceFrom ? "From " : "") + money(p.price);
 // El Vaso's WhatsApp number in international format, without the "+".
 export const whatsappNumber = "254726881124";
-// The site currently focuses on brand awareness. Set to true to bring back
-// prices, cart, search, sorting/price filters and add-to-cart buttons.
+// Set to true to bring back the cart, search, sorting/price filters and
+// add-to-cart buttons. Prices show either way.
 export const shopEnabled = false;
 export const instagramUrl = "https://www.instagram.com/elvaso_glassware/";
 export const pressUrl =
