@@ -1,4 +1,4 @@
-# El Vaso Glassware — React Website
+# El Vaso Glassware — Website
 
 Responsive, slightly minimalist redesign based on the approved green + terracotta concept mockups. Built with **React, Vite, CSS, lucide-react**.
 
