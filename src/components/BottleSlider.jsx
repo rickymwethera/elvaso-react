@@ -9,7 +9,7 @@ export default function BottleSlider() {
   return (
     <section className="section container transform">
       <div className="transform-copy">
-        <div className="eyebrow">FROM BOTTLE TO GLASS</div>
+        <div className="eyebrow">FROM BOTTLE TO TUMBLER</div>
         <h2>Before and after</h2>
         <p>
           Every El Vaso piece starts life as a bottle someone threw away. Drag
@@ -27,7 +27,7 @@ export default function BottleSlider() {
           alt="An empty green glass bottle"
         />
         <span className="compare-tag before">Before: an empty bottle</span>
-        <span className="compare-tag after">After: a glass for your table</span>
+        <span className="compare-tag after">After: a tumbler for your table</span>
         <span className="compare-handle" aria-hidden="true">
           <ChevronsLeftRight size={20} />
         </span>

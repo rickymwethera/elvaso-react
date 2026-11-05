@@ -26,7 +26,7 @@ export default function Journey() {
     <section className="section journey">
       <div className="container">
         <div className="eyebrow">THE JOURNEY OF A BOTTLE</div>
-        <h2>How a bottle becomes a glass</h2>
+        <h2>From bottle to finished piece</h2>
         <ol className="journey-steps">
           {journey.map(([Icon, title, desc], i) => (
             <li key={title}>
