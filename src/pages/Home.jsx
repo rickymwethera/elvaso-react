@@ -24,11 +24,9 @@ export default function Home() {
         <div className="hero-copy">
           <div className="eyebrow">HANDMADE · UPCYCLED · KENYAN CRAFT</div>
           <h1>
-            Every bottle
+            Old bottles,
             <br />
-            deserves
-            <br />
-            <em>a second life.</em>
+            <em>new stories.</em>
           </h1>
           <p>
             We turn discarded glass bottles into beautiful, functional pieces.
